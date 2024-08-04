@@ -12,6 +12,7 @@
 @import url(../blocks/profile/__languages/profile__languages.css);
 @import url(../blocks/profile/__languages/_title/profile__languages_title.css);
 
+@import url(../blocks/language/language.css);
 @import url(../blocks/language/__list/language__list.css);
 @import url(../blocks/language/__progress/languages__progress.css);
 
@@ -19,6 +20,7 @@
 @import url(../blocks/education/education.css);
 @import url(../blocks/education/__title/education__title.css);
 
+@import url(../blocks/course/course.css);
 @import url(../blocks/course/__container/course__container.css);
 @import url(../blocks/course/__item/course__item.css);
 @import url(../blocks/course/__year__container/course__year__container.css);

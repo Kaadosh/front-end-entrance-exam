@@ -16,3 +16,32 @@
     margin: 10px 0;
   }
 }
+
+.contact__address {
+  margin-bottom: 14px;
+
+  font-style: normal;
+}
+
+.contact__link {
+  outline: none;
+  text-decoration: none;
+  color: #FFFFFF;
+
+  padding-left: 1.2em;
+}
+
+.contact__separator {
+  color: #FFFFFF;
+  padding-left: 1em;
+}
+
+.contact__title {
+  padding-left: 1em;
+  font-size: 14px;
+  
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #FFFFFF;
+  }

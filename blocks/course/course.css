@@ -1,0 +1,37 @@
+.course__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.course__description {
+  font-size: 8px;
+} 
+
+.course__item {
+  padding: 10px;
+
+  border-radius: 15px;
+  max-width: 99px;
+  background-color: #FFFFFF;
+}
+
+.course__item:first-child {
+  background-color: rgba(40, 217, 121, 1);
+  color: #FFFFFF;
+}
+
+.course__title {
+  font-size: 10px;
+}
+
+.course__year {
+  font-size:  10px;
+}
+
+.course__year__container {
+  display: flex;
+    justify-content: space-between;
+}
