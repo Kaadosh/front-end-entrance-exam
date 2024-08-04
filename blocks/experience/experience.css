@@ -1,0 +1,18 @@
+.experience {
+  max-width: 396px;
+  padding: 6px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .experience {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .experience {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,4 @@
+.course__year__container {
+  display: flex;
+    justify-content: space-between;
+}

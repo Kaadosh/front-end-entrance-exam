@@ -1,0 +1,22 @@
+.languages__progress {
+  width: 65%;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+
+.languages__progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.languages__progress::-webkit-progress-value {
+  background-color: #6fdc8a;
+  border-radius: 10px;
+}
+
+.languages__progress::-moz-progress-bar {
+  background-color: #6fdc8a;
+  border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+.profile__languages {
+  background-color: #f5f5f5;
+  padding: 10px 20px 0 20px;
+  border-radius: 15px;
+  min-width: 267px;
+  max-height: 124px;
+}
+
+@media (max-width: 600px) {
+  .profile__languages {
+    max-width: 100%;
+  }
+}

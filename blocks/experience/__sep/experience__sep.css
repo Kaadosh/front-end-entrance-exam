@@ -1,0 +1,5 @@
+.experience__sep {
+  display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}

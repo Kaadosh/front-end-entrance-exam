@@ -1,0 +1,21 @@
+.language__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language__list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.language__list label {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10.4px;
+  text-align: center;
+  width: 30%;
+  font-weight: bold;
+}

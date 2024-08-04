@@ -1,0 +1,28 @@
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+@media (max-width: 587px) {
+  .aboutMe {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+  }
+}
+

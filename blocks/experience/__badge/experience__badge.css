@@ -1,0 +1,10 @@
+.experience__badge {
+  position: absolute;
+    top: 3px;
+    right: 20px;
+    color: rgba(221, 241, 99, 1);
+    background: rgba(126, 115, 18, 0.4);
+    font-size: 8px;
+    padding: 3px 4px 2px 4px;
+    border-radius: 59px;
+}

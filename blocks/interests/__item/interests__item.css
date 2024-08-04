@@ -1,0 +1,8 @@
+.interests__item {
+  list-style-type: none;
+
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 4px 10px 4px 10px;
+  background-color: white;
+}

@@ -1,0 +1,27 @@
+.tools__subtitle {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 59px;
+  padding: 2px 6px 2px 6px;
+  gap: 10px;
+  max-width: 30px;
+  margin: 0;
+
+  position: absolute;
+  bottom: 92%;
+  z-index: 10;
+  left: 32%;
+  color: white;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media (min-width: 600px) {
+  .tools__subtitle {
+    display: none;
+    position: relative;
+
+  }
+}

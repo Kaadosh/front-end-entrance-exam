@@ -1,0 +1,13 @@
+.experience__container {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  position: relative;
+}
+@media (max-width: 601px){
+  .experience__container {
+    flex-direction: column;
+  }
+}

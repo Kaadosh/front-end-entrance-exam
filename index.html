@@ -1,13 +1,199 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Vite App</title>
+</head>
+
+<body class="body">
+  <div id="app">
+    <section class="profile">
+      <img src="/public/img/profileImg.png" alt="фото профиля" class="profile__avatar">
+      <article class="profile__info">
+        <div class="profile__hello" contenteditable="true">Hello 👋🏻 I’m</div>
+        <h2 class="profile__name" contenteditable="true">Graham Hunt</h2>
+        <p class="profile__description" contenteditable="true">Brand/Logo Designer</p>
+      </article>
+      <article class="profile__languages">
+        <h4 class="profile__languages_title" contenteditable="true">Languages</h4>
+        <ul class="language__list">
+          <li class="language__item_english">
+            <label for="english" contenteditable="true">English</label>
+            <progress id="english" max="100" value="100" class="languages__progress"></progress>
+          </li>
+          <li class="language__item_spanish">
+            <label for="spanish" contenteditable="true">Spanish</label>
+            <progress id="spanish" max="100" value="85" class="languages__progress"></progress>
+          </li>
+          <li class="language__item_french">
+            <label for="french" contenteditable="true">French</label>
+            <progress id="french" max="100" value="65" class="languages__progress"></progress>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <main class="main">
+      <section class="aboutMe">
+        <article class="education">
+          <h2 class="education__title" contenteditable="true">Education</h2>
+          <div class="course__container">
+            <div class="course__item">
+              <div class="course__year__container">
+                <span class="course__year" contenteditable="true">2024 </span>
+                <img src="/public/img/Vector.svg" alt="Сердечко">
+              </div>
+              <h3 class="course__title" contenteditable="true">UI/UX</h3>
+              <p class="course__description" contenteditable="true">#UX #UI #research #DesignSystem #Ui #wireframing
+                #figma #Ux</p>
+            </div>
+            <div class="course__item">
+              <span class="course__year" contenteditable="true">2017</span>
+              <h3 class="course__title" contenteditable="true">Graphic design</h3>
+              <p class="course__description" contenteditable="true">#branding #web #illustration #adobe</p>
+            </div>
+            <div class="course__item">
+              <span class="course__year" contenteditable="true">2017 - 2022</span>
+              <h3 class="course__title" contenteditable="true">Law</h3>
+              <p class="course__description" contenteditable="true">#law #legalStudies #contracts #internationalLaws</p>
+            </div>
+          </div>
+        </article>
+        <div class="interests__container">
+          <article class="interests">
+            <h3 class="interests__title" contenteditable="true">Interests</h3>
+            <ul class="interests__list">
+              <li class="interests__item" contenteditable="true">branding</li>
+              <li class="interests__item" contenteditable="true">brand identity</li>
+              <li class="interests__item" contenteditable="true">logo</li>
+              <li class="interests__item" contenteditable="true">typography</li>
+              <li class="interests__item" contenteditable="true">photography</li>
+              <li class="interests__item" contenteditable="true">designing</li>
+              <li class="interests__item" contenteditable="true">poster design</li>
+              <li class="interests__item" contenteditable="true">research</li>
+              <li class="interests__item" contenteditable="true">social networks</li>
+              <li class="interests__item" contenteditable="true">illustration</li>
+            </ul>
+          </article>
+          <article class="contact">
+            <h3 class="contact__title" contenteditable="true">Let´s chat! I´m ready to work on excinting projects</h3>
+            <address class="contact__address">
+              <a href="mailto:ivann19bj@gmail.com" class="contact__link" contenteditable="true">ivann19bj@gmail.com</a>
+              <span class="contact__separator">|</span>
+              <a class="contact__link" href="tel:+34666666666" contenteditable="true">+34 666 666 666</a>
+            </address>
+          </article>
+        </div>
+      </section>
+      <section class="second">
+        <article class="tools">
+          <h2 class="tools__title" contenteditable="true">Tools</h2>
+
+          <div class="tools__category">
+            <h4 class="tools__subtitle" contenteditable="true">design</h4>
+            <ul class="tools__list">
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoFigma.svg" alt="Figma"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoCreativeCloud.svg"
+                  alt="Creative Cloud"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoMiro.svg" alt="Miro"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoNotion.svg" alt="Notion"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoMeet.svg" alt="Meet"></li>
+            </ul>
+          </div>
+
+          <div class="tools__category">
+            <h4 class="tools__subtitle tools__subtitle_noCode">no-code</h4>
+            <ul class="tools__list">
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoZapìer.svg" alt="Zapier"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoWebflow.svg" alt="Webflow"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoFramer.svg" alt="Framer"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoWordpress.svg" alt="Wordpress">
+              </li>
+            </ul>
+          </div>
+
+          <div class="tools__category">
+            <h4 class="tools__subtitle tools__subtitle_art" contenteditable="true">artificial intelligence</h4>
+            <ul class="tools__list">
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoChatGPT.svg" alt="ChatGPT"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoCopilot.svg" alt="Copilot"></li>
+              <li class="tools__item"><img class="tools__img" src="/public/img/logoMidjourney.svg" alt="Midjourney">
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience">
+          <h3 class="experience__heading" contenteditable="true">Experience</h3>
+
+          <div class="experience__container experience__container_green">
+
+            <div class="experience__sep">
+              <span class="experience__color_white experience__year" contenteditable="true">Jun. 2023 – Present</span>
+              <h3 class="experience__color_white experience__title experience__color_white" contenteditable="true">
+                Marketing Manager</h3>
+              <h4 class="experience__color_white experience__subtitle" contenteditable="true">Pankayam | Full-time</h4>
+            </div>
+            <ul class="experience__list">
+              <li class="experience__color_white experience__item " contenteditable="true">Strategy development and
+                planning of campaigns that
+                promote the business
+                and generate genuine traffic</li>
+              <li class="experience__color_white experience__item " contenteditable="true">SEO Content Creation for
+                Blogs, Website, Social
+                media
+              </li>
+            </ul>
+            <span class="experience__badge" contenteditable="true">most recent</span>
+
+          </div>
+
+          <div class="experience__container">
+            <div class="experience__sep">
+              <span class="experience__year" contenteditable="true">2017 – Present</span>
+              <h3 class="experience__title" contenteditable="true">Graphic / Web Designer</h3>
+              <h4 class="experience__subtitle" contenteditable="true">Freelance</h4>
+            </div>
+            <ul class="experience__list">
+              <li class="experience__item" contenteditable="true">Development of internal projects from scratch, product
+                design of brands
+              </li>
+              <li class="experience__item" contenteditable="true">Landing page, webapps, and hybrid apps</li>
+              <li class="experience__item" contenteditable="true">Coordinating with outside agencies, art services, web
+                designer, marketing,
+                printers, and colleagues as necessary</li>
+            </ul>
+          </div>
+
+          <div class="experience__container">
+            <div class="experience__sep">
+              <span class="experience__year" contenteditable="true">Sep. 2021 – Jun. 2023</span>
+              <h3 class="experience__title" contenteditable="true">Legal Assistant</h3>
+              <h4 class="experience__subtitle" contenteditable="true">Law Firm | Intern</h4>
+            </div>
+            <ul class="experience__list">
+              <li class="experience__item" contenteditable="true">Provide administrative support to lawyer and enhance
+                office effectiveness
+              </li>
+              <li class="experience__item" contenteditable="true">Handle communication with clients, witnesses etc.</li>
+              <li class="experience__item" contenteditable="true">Prepare case briefs and summarize depositions,
+                interrogatories and
+                testimony</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <div class="button__container">
+
+        <button class="button ripple" id="downloadPdf">Скачать PDF</button>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>

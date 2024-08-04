@@ -1,0 +1,25 @@
+.tools__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 13px 16px 4px;;
+  max-width: 107px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+.tools__list:last-child {
+  justify-content: flex-start;
+  padding-left: 24px;
+}
+
+@media (max-width: 600px) {
+  .tools__list {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
