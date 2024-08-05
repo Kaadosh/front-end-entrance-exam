@@ -1,6 +1,11 @@
 
 # Vite App Resume Builder
 
+## GitHub Page
+
+https://kaadosh.github.io/front-end-entrance-exam/
+
+
 ## Задача
 
 Этот проект представляет собой простое веб-приложение  резюме. Пользователи могут  редактировать и загружать резюме в формате PDF. Приложение построено с использованием HTML, CSS и JavaScript и может быть развернуто на GitHub Pages.
